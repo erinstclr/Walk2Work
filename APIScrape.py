@@ -48,7 +48,7 @@ def main():
     
     for asin in asins:
         print(f"Fetching reviews for ASIN: {asin}")
-        reviews = fetch_reviews(asin, pages=2)  # Change number of pages as needed
+        reviews = fetch_reviews(asin, pages=11)  # Change number of pages as needed
         for review in reviews:
             review["asin"] = asin  # Add ASIN for reference
         all_data.extend(reviews)
