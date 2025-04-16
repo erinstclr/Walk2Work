@@ -6,6 +6,8 @@ run these first in the terminal to install dependencies
 -> python -m pip install lxml
 -> python -m pip install pandas
 -> python -m pip install bs4
+-> pyhton -m pip install re
+-> python -m pip install gender_guesser
 
 after installation, change the file path to YOUR file path for the txt file holding the ASINs
 Run the program
