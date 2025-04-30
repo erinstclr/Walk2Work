@@ -8,7 +8,7 @@ def read_asins(file_path):
         return [line.strip() for line in file.readlines() if line.strip()]
 
 def clean_title(title):
-    return re.sub(r'^\d+(\.\d+)? out of \d+(\.\d+)? stars[\s\-]*', '', title).strip() #removes "#.# out of 5.0 stars" from title issue
+    return re.sub(r'^\d+(\.\d+)? out of \d+(\.\d+)? stars[\s\-]*', '', title).strip() #removes "#.# out of 5.0 stars" from title
 
 
 def fetch_reviews(asin, pages=1):
